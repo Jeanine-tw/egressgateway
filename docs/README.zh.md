@@ -2,7 +2,7 @@ EgressGateway 项目为 Kubernetes 提供 Egress 能力。
 
 <img src="./proposal/01-egress-gateway/Egress Gateway.png" width="76%"></img>
 
-从2021年开始，我们收到了以下反馈。
+从 2021 年开始，我们收到了以下反馈。
 
 有两个集群 A 和 B。集群 A 基于 VMWare 并主要运行数据库负载，集群 B 是一个 Kubernetes 集群。集群 B 中的某些应用需要访问集群 A 中的数据库，而网络管理员希望通过出口网关管理集群的 Pods。
 

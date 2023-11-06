@@ -2,21 +2,21 @@ The gateway provides network egress capabilities for Kubernetes clusters.
 
 <img src="./proposal/01-egress-gateway/Egress Gateway.png" width="76%"></img>
 
-Starting with 2021, we received some feedback as follows.
+Starting with 2021, we have received some feedback as follows.
 
 There are two clusters A and B. Cluster A is VMWare-based and runs mainly Database workloads, and Cluster B is a Kubernetes cluster. Some applications in Cluster B need to access the database in Cluster A, and the network administrator wants the cluster Pods to be managed through an egress gateway.
 
 ## Features
 
-* Solve IPv4 IPv6 dual-stack connectivity.
+* Solve IPv4 and IPv6 dual-stack connectivity.
 * Solve the high availability of Egress Nodes.
-* Allow filtering Pods Egress Policy (_Destination CIDR_).
+* Allow filtering Pods' Egress Policy (_Destination CIDR_).
 * Allow filtering of egress Applications (_Pods_).
-* Can be used in low kernel version.
+* Can be used in lower kernel versions.
 * Support multiple egress gateways instance.
 * Support namespaced egress IP.
-* Supports automatic detection of cluster traffic for egress gateways policies.
-* Support namespace default egress instances.
+* Support automatic detection of cluster traffic for egress gateways policies.
+* Support default namespace-based egress instances.
 
 ### Compatibility
 
